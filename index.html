@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Sweetto 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Landing Screen -->
+<section id="landing">
+    <h1>Happy Birthday Sweetto 💖</h1>
+    <p>This is something  for you…</p>
+    <button onclick="enterSite()">Enter</button>
+</section>
+
+<!-- Main Content -->
+<section id="main" class="hidden">
+
+    <!-- Memory Lane -->
+    <div class="section">
+        <h2>Memory Lane</h2>
+        <p class="fade">You don’t even realize how easily you make things better…</p>
+        <p class="fade">Even normal moments feel special with you.</p>
+        <p class="fade">Some people come and go… you stayed.</p>
+    </div>
+
+    <!-- Appreciation -->
+    <div class="section">
+        <h2>Why You’re Special</h2>
+        <div class="cards">
+            <div class="card">Your kindness is rare.</div>
+            <div class="card">You make people feel seen.</div>
+            <div class="card">You matter more than you think.</div>
+        </div>
+    </div>
+
+    <!-- Typing Message -->
+    <div class="section">
+        <h2>A Message For You</h2>
+        <p id="typing"></p>
+    </div>
+
+    <!-- Twist Button -->
+    <div class="section">
+        <button onclick="twist()">Don’t Click This</button>
+    </div>
+
+</section>
+
+<!-- Twist Screen -->
+<section id="twistScreen" class="hidden">
+    <h1>
+        No matter where life takes us… <br>
+        I just want you to know <br>
+        you mattered, you matter, and you always will.
+    </h1>
+</section>
+
+<audio id="music" src="https://www.bensound.com/bensound-music/bensound-romantic.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

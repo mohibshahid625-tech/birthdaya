@@ -1,0 +1,25 @@
+function enterSite() {
+    document.getElementById("landing").classList.add("hidden");
+    document.getElementById("main").classList.remove("hidden");
+    typeMessage();
+}
+
+const message = "I don’t say this often... but I genuinely appreciate you more than you think. You became someone I never expected, but now I can't imagine not having you.";
+
+let i = 0;
+
+function typeMessage() {
+    if (i < message.length) {
+        document.getElementById("typing").innerHTML += message.charAt(i);
+        i++;
+        setTimeout(typeMessage, 40);
+    }
+}
+
+function twist() {
+    document.getElementById("main").classList.add("hidden");
+    document.getElementById("twistScreen").classList.remove("hidden");
+
+    const music = document.getElementById("music");
+    music.play();
+}
